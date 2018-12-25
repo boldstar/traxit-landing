@@ -1,0 +1,190 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.nav-container {
+    position: absolute;
+    margin: 20px;
+    width: 100%;
+  }
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('./assets/img/traxithero.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.nav-buttons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-buttons li {
+    margin-right: 75px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    letter-spacing: 2px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #ff4800;
+}
+
+.nav-button {
+    border: 2px solid #ff4800;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.call-to-action {
+    width: 400px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    align-self: center;
+    z-index: 0;
+    background: transparent;
+    color: white;
+    text-align: end;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+}
+
+.description {
+    align-self: center;
+    width: 30%;
+}
+
+.description i {
+    color: #0011ff;
+}
+
+.description h2 {
+    color: #ff4800;
+}
+
+.tracking {
+    align-self: flex-end;
+}
+
+.workflow {
+    align-self: flex-start;
+}
+
+.management {
+    align-self: flex-end;
+}
+
+.contact {
+    height: 100vh;
+    background-color: #0011ff;
+    display: flex;
+    justify-content: center;
+}
+
+.contact form {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    width: 30%;
+}
+
+.contact form h4 {
+    color: #ff4800;
+    letter-spacing: 2px;
+}
+
+.footer {
+    padding: 30px 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .hero {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .nav-container {
+        margin: 0;
+    }
+
+    .nav-buttons  li {
+        margin: 0;
+    }
+
+    .nav-buttons .nav-href {
+        display: none;
+    }
+
+    .about {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .description {
+        width: 90%;
+        height: 30%;
+    }
+
+    .description h2 {
+        margin-top: 50px;
+    }
+
+    .tracking {
+        align-self: center;
+    }
+    
+    .workflow {
+        align-self: center;
+    }
+    
+    .management {
+        align-self: center;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+  }
